@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ຄູ່ມືທ່ອງທ່ຽວລາວ - ໂສມໃໝ່ (6 ສະຖານທີ່)</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>ຄູ່ມືທ່ອງທ່ຽວເມືອງລາວ</h1>
+        <p>ຄລິກທີ່ຊື່ເພື່ອອ່ານຂໍ້ຄວາມ ຫຼື ປຸ່ມແຜນທີ່ເພື່ອເປີດ GPS ຕຳແໜ່ງຈິງ</p>
+    </header>
+
+    <div class="filter-container">
+        <button class="filter-btn active">ທັງໝົດ</button>
+        <button class="filter-btn">ທຳມະຊາດ</button>
+        <button class="filter-btn">ວັດທະນະທຳ</button>
+        <button class="filter-btn">ປະຫວັດສາດ</button>
+    </div>
+
+    <div class="container">
+        <div class="grid">
+
+            <div class="card">
+                <img class="image-placeholder" src="https://wander-lush.org/wp-content/uploads/2020/12/Things-to-do-in-Luang-Prabang-Royal-Palace.jpg" alt="ຫຼວງພະບາງ">
+                <div class="card-header">
+                    <div class="card-info" onclick="toggleCard(this)">
+                        <h2 class="place-title">ເມືອງມໍລະດົກໂລກ ຫຼວງພະບາງ</h2>
+                        <a href="https://maps.app.goo.gl/8GRQDZA5DpnmcPS57?g_st=iw" target="_blank" class="location-link" onclick="event.stopPropagation();">
+                            📍 🗺️ Google Maps
+                        </a>
+                    </div>
+                    <button class="arrow-btn" onclick="toggleCard(this.parentElement.querySelector('.card-info'))">❯</button> 
+                </div>
+                <div class="card-body">
+                    <div class="card-body-content">
+                        <p class="detail">ເມືອງທ່ອງທ່ຽວວັດທະນະທຳອັນດັບໜຶ່ງ ຫ້ອມລ້ອມດ້ວຍວັດວາອາຮາມເກົ່າແກ່ ແລະ ສະຖາປັດຕະຍະກຳແບບຝຣັ່ງ ຕັ້ງຢູ່ແຄມນ້ຳຂອງ.</p>
+                        <span class="tip">💡 ຂໍ້ແນະນຳ: ຫ້າມພາດການໄປຊົມວິວຕາເວັນຕົກດິນຢູ່ຍອດພູສີ.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="image-placeholder" src="https://www.asiakingtravel.com/cuploads/files/vang-vieng-5.png" alt="ວັງວຽງ">
+                <div class="card-header">
+                    <div class="card-info" onclick="toggleCard(this)">
+                        <h2 class="place-title">ເມືອງທຳມະຊາດ ວັງວຽງ</h2>
+                        <a href="https://maps.app.goo.gl/Pm7dWs6e2G4FDtRXA?g_st=iw" target="_blank" class="location-link" onclick="event.stopPropagation();">
+                            📍 🗺️ Google Maps
+                        </a>
+                    </div>
+                    <button class="arrow-btn" onclick="toggleCard(this.parentElement.querySelector('.card-info'))">❯</button>
+                </div>
+                <div class="card-body">
+                    <div class="card-body-content">
+                        <p class="detail">ດິນແດນແຫ່ງກິດຈະກຳ Outdoor ແລະ ກິດຈະກຳທ້າທาย ເຕັມไปด้วยຖ້ຳ, ບູລາກູນ (Blue Lagoon) ສີຟ້າໃສ.</p>
+                        <span class="tip">💡 ຂໍ້ແນະນຳ: ການລ່ອງເຮືອຄາຍັກຕາມນ້ຳຊອງໃນຍາມແລງແມ່ນຟິນທີ່ສຸດ.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="image-placeholder" src="https://media.istockphoto.com/id/497229273/photo/phra-that-luang-temple-and-landmark-in-laos-vientiane.jpg?s=612x612&w=0&k=20&c=nwbH6j2WW_1Fyw5akPaSjB7VSHa4AWnceKWj_jl5IXE=" alt="ພຣະທາດຫຼວງ">
+                <div class="card-header">
+                    <div class="card-info" onclick="toggleCard(this)">
+                        <h2 class="place-title">ພຣະທາດຫຼວງ ວຽງຈັນ</h2>
+                        <a href="https://maps.app.goo.gl/s8RcWb26dn92Egmn6?g_st=iw" target="_blank" class="location-link" onclick="event.stopPropagation();">
+                            📍 🗺️ Google Maps
+                        </a>
+                    </div>
+                    <button class="arrow-btn" onclick="toggleCard(this.parentElement.querySelector('.card-info'))">❯</button>
+                </div>
+                <div class="card-body">
+                    <div class="card-body-content">
+                        <p class="detail">ພຣະທາດຄູ່ບ້ານຄູ່ເມືอง ແລະ ເປັນສູນລວມຈິດໃຈຂອງປະຊາຊົນລາວທົ່ວປະເທດ ຕົວທາດສີທອງເຫຼືອງອະລ່າມຕັ້ງສະຫງ່າຢ່າງງົດງາມ.</p>
+                        <span class="tip">💡 ຂໍ້ແນະນຳ: ຊ່ວງເດືອນພະຈິກຈະມີງານບຸນນະມັດສະການພຣະທາດຫຼວງທີ່ຍິ່ງໃຫຍ່ປະຈຳປີ.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="image-placeholder" src="https://i.ytimg.com/vi/7S_8oq09sAs/maxresdefault.jpg" alt="ຕາດກວางຊີ">
+                <div class="card-header">
+                    <div class="card-info" onclick="toggleCard(this)">
+                        <h2 class="place-title">ນ້ຳຕົກຕາດກວາງຊີ</h2>
+                        <a href="https://maps.app.goo.gl/4PgNytFvk8pNDkvv6?g_st=iw" target="_blank" class="location-link" onclick="event.stopPropagation();">
+                            📍 🗺️ Google Maps
+                        </a>
+                    </div>
+                    <button class="arrow-btn" onclick="toggleCard(this.parentElement.querySelector('.card-info'))">❯</button>
+                </div>
+                <div class="card-body">
+                    <div class="card-body-content">
+                        <p class="detail">ນ້ຳຕົກตາດທີ່ງົດງາມທີ່ສຸດແຫ່ງໜຶ່ງໃນລາວ ຕັ້ງอยู่ຫ່າງຈາກຕົວເມືອງຫຼວງພະບາງ ໂດດເດັ່ນດ້ວຍນ้ຳສีຟ້າຂຽວມໍລະກົດ ແລະ ຊັ້ນນ້ຳຕົກທີ່ຫຼຸດຫຼັ່ນກັນລົງມາ.</p>
+                        <span class="tip">💡 ຂໍ້ແນະນຳ: ມີສູນອະນຸລັກໝີຢູ່ໃກ້ๆ ທີ່ສາມາດແວ່ຊົມ ແລະ ສະໜັບສະໜູນໄດ້.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="image-placeholder" src="https://cdn1.matadornetwork.com/blogs/1/2015/02/Wat-Phu-Champasak-in-Southern-Laos-1200x853.jpg" alt="ວັດພູຈຳປາສັກ">
+                <div class="card-header">
+                    <div class="card-info" onclick="toggleCard(this)">
+                        <h2 class="place-title">ວັດພູ ຈຳປາສັກ</h2>
+                        <a href="https://maps.app.goo.gl/bYuRjJDPS2HQZxkT7?g_st=iw" target="_blank" class="location-link" onclick="event.stopPropagation();">
+                            📍 🗺️ Google Maps
+                        </a>
+                    </div>
+                    <button class="arrow-btn" onclick="toggleCard(this.parentElement.querySelector('.card-info'))">❯</button>
+                </div>
+                <div class="card-body">
+                    <div class="card-body-content">
+                        <p class="detail">ໂບຮານສະຖານມໍລະດົກໂລກແຫ່ງທີສອງຂອງລາວ ເປັນປາສາດຫີນຂອມໂບຮານ ຕັ້ງຢູ່ຕີນພູເກົ້າ ທີ່ມີປະຫວັດສາດເກົ່າແກ່ຍາວນານກວ່າປາສາດหີນນະຄອນວັດ.</p>
+                        <span class="tip">💡 ຂໍ້ແນະນຳ: ຄວນກຽມໝວກ ແລະ ຈ້ອງໄປນຳ ເພາະຊ່ວງຍ່າງຂຶ້ນຂັ້ນໄດຈະຂ້ອນຂ້າງຮ້ອນ.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="image-placeholder" src="https://freedomdestinations.co.uk/wp-content/uploads/Plain-of-jars.jpg" alt="ທົ່ງໄຫຫີນ">
+                <div class="card-header">
+                    <div class="card-info" onclick="toggleCard(this)">
+                        <h2 class="place-title">ທົ່ງໄຫຫີນ ຊຽງຂວາງ</h2>
+                        <a href="https://maps.app.goo.gl/9dECTdCmE9UiRfdQ7?g_st=iw" target="_blank" class="location-link" onclick="event.stopPropagation();">
+                            📍 🗺️ Google Maps
+                        </a>
+                    </div>
+                    <button class="arrow-btn" onclick="toggleCard(this.parentElement.querySelector('.card-info'))">❯</button>
+                </div>
+                <div class="card-body">
+                    <div class="card-body-content">
+                        <p class="detail">ແຫຼ່ງທ່ອງທ່ຽວທາງປະຫວັດສາດ ແລະ ໂບຮານຄະດີ ທີ່ເຕັມไปด้วยໄຫຫີນຂະໜາດໃຫຍ່ຢາຍຢູ່ທົ່ວທົ່ງພຽງ ເຊິ່ງຍັງເປັນສິ່ງມະຫัดສະຈັນທີ່ຊອກຫາຄຳຕອບທີ່ແນ່ຊັດບໍ່ໄດ້.</p>
+                        <span class="tip">💡 ຂໍ້ແນະນຳ: ໃຫ້ທ່ຽวຊົມສະເພາະຈຸດທີເຈົ້າໜ້າທີ່ກຳນົດໄວ້ ເພື່ອຄວາມປອດໄພ.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 ຄູ່ມືທ່ອງທ່ຽວລາວ - ພັດທະນາໂດຍທີມງານນັກສຶກສາ</p>
+    </footer>
+
+    <script>
+        function toggleCard(infoElement) {
+            const card = infoElement.closest('.card');
+            const isOpen = card.classList.contains('active');
+            
+            document.querySelectorAll('.card').forEach(c => {
+                c.classList.remove('active');
+                c.querySelector('.card-body').style.maxHeight = null;
+            });
+            
+            if (!isOpen) {
+                card.classList.add('active');
+                const body = card.querySelector('.card-body');
+                body.style.maxHeight = body.scrollHeight + "px";
+            }
+        }
+    </script>
+
+</body>
+</html>
